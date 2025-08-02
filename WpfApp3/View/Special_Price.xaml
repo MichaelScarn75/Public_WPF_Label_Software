@@ -1,0 +1,450 @@
+﻿<UserControl
+    x:Class="WpfApp3.View.Special_Price"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ViewModel="clr-namespace:WpfApp3.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp3.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    Name="Special_Price_User_Control"
+    Width="1366"
+    Height="768"
+    syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=Windows11Dark}"
+    DataContext="{DynamicResource Special_Price_ViewModel_Resource}"
+    Loaded="Special_Price_UserControl_Loaded"
+    mc:Ignorable="d">
+
+    <Grid x:Name="Main_Grid">
+        <!--  Define Rows for each ComboBox & TextBox  -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="90" />
+            <RowDefinition Height="550" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  Define Columns for ComboBox, Label, and TextBox  -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="240" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid
+            Grid.Row="0"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="4">
+            <!--  indicator  -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <!--  indicator  -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="683" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border
+                x:Name="ErrorTextBorder1"
+                Grid.Row="0"
+                Grid.RowSpan="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                BorderBrush="Black"
+                BorderThickness="0.5"
+                Visibility="{Binding ErrorTextBorder1_Visibility}">
+                <Grid Background="LightGoldenrodYellow">
+                    <!--  indicator  -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+                    <!--  indicator  -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!--  Error Icon  -->
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Width="20"
+                        Height="20"
+                        Margin="5"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Source="{StaticResource Img_Error}" />
+
+                    <syncfusion:SfTextBoxExt
+                        x:Name="ErrorTextBox1"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Background="LightGoldenrodYellow"
+                        BorderThickness="0"
+                        FontSize="13"
+                        Text="{Binding ErrorTextBox1_Text}"
+                        Watermark="Enter a Value" />
+                </Grid>
+            </Border>
+
+            <Grid
+                Grid.Row="0"
+                Grid.RowSpan="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="1">
+                <!--  indicator  -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <!--  indicator  -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="325" />
+                    <ColumnDefinition Width="325" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <syncfusion:SfTextBoxExt
+                    x:Name="SimpleFilterTextBox1"
+                    Grid.Row="0"
+                    Grid.RowSpan="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="1"
+                    FontSize="17"
+                    PreviewKeyDown="SimpleFilterTextBox1_PreviewKeyDown"
+                    Text=""
+                    Watermark="Type to filter" />
+                <syncfusion:ComboBoxAdv
+                    x:Name="SimpleFilterComboBox"
+                    Grid.Row="0"
+                    Grid.RowSpan="1"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="1"
+                    FontSize="13"
+                    SelectedIndex="0">
+                    <syncfusion:ComboBoxItemAdv Content="Sales Code" />
+                    <syncfusion:ComboBoxItemAdv Content="Item No" />
+                    <syncfusion:ComboBoxItemAdv Content="Unit Of Measure Code" />
+                    <syncfusion:ComboBoxItemAdv Content="Unit Price" />
+                    <syncfusion:ComboBoxItemAdv Content="Starting Date" />
+                    <syncfusion:ComboBoxItemAdv Content="Ending Date" />
+                    <syncfusion:ComboBoxItemAdv Content="Product Barcode" />
+                    <syncfusion:ComboBoxItemAdv Content="Barcode Format" />
+                    <syncfusion:ComboBoxItemAdv Content="Customer SKU" />
+                    <syncfusion:ComboBoxItemAdv Content="Hidden" />
+                    <syncfusion:ComboBoxItemAdv Content="English Label Description" />
+                    <syncfusion:ComboBoxItemAdv Content="Malay Label Description" />
+                    <syncfusion:ComboBoxItemAdv Content="Chinese Label Description" />
+                    <syncfusion:ComboBoxItemAdv Content="Label Unit Of Measure" />
+                    <syncfusion:ComboBoxItemAdv Content="Label Size" />
+                    <syncfusion:ComboBoxItemAdv Content="Currency Code" />
+                </syncfusion:ComboBoxAdv>
+                <syncfusion:ButtonAdv
+                    x:Name="SimpleFilterSearchButton"
+                    Grid.Row="0"
+                    Grid.RowSpan="1"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="1"
+                    HorizontalContentAlignment="Right"
+                    Background="White"
+                    Click="SimpleFilterSearchButton_Click"
+                    IconHeight="20"
+                    IconWidth="20"
+                    Label="{x:Null}"
+                    LargeIcon="{StaticResource Img_GoTo}"
+                    SmallIcon="{StaticResource Img_GoTo}" />
+            </Grid>
+        </Grid>
+        <Grid
+            x:Name="Detailed_Filter_Parent_Grid"
+            Grid.Row="1"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="4">
+            <!--  indicator  -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--  indicator  -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1200" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Content="Show results:"
+                FontSize="13"
+                FontWeight="Bold" />
+
+            <ScrollViewer
+                x:Name="ScrollViewer_Filter"
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                VerticalScrollBarVisibility="Auto">
+                <Grid x:Name="Detailed_Filter_Children_Grid">
+                    <!--  indicator  -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <!--  indicator  -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="280" />
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="280" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <syncfusion:ButtonAdv
+                        x:Name="AddFilter_Button"
+                        Grid.Row="1"
+                        Grid.RowSpan="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Width="90"
+                        Height="30"
+                        HorizontalAlignment="Left"
+                        HorizontalContentAlignment="Center"
+                        Click="AddFilter_Button_Click"
+                        FontSize="12"
+                        FontWeight="SemiBold"
+                        IconHeight="15"
+                        IconWidth="15"
+                        Label="Add Filter"
+                        LargeIcon="{StaticResource Img_Add}"
+                        SmallIcon="{StaticResource Img_Add}"
+                        Tag="AddFilter_Button" />
+                </Grid>
+            </ScrollViewer>
+            <syncfusion:ButtonAdv
+                x:Name="Expander1"
+                Grid.Row="1"
+                Grid.RowSpan="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Width="33"
+                Height="33"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                HorizontalContentAlignment="Right"
+                Background="White"
+                Click="Expander1_Click"
+                IconHeight="20"
+                IconWidth="20"
+                Label="{x:Null}"
+                LargeIcon="{StaticResource Img_ExpandAll}"
+                SmallIcon="{StaticResource Img_ExpandAll}" />
+        </Grid>
+        <Grid
+            Grid.Row="2"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Margin="10,10,10,10">
+            <!--  indicator  -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--  indicator  -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <syncfusion:SfDataGrid
+                x:Name="SfDataGrid1"
+                Grid.Row="1"
+                VerticalAlignment="Stretch"
+                AddNewRowPosition="Bottom"
+                AllowDeleting="False"
+                AllowEditing="True"
+                AllowResizingColumns="True"
+                AutoExpandGroups="True"
+                AutoGenerateColumns="False"
+                ColumnSizer="AutoWithLastColumnFill"
+                CurrentCellBeginEdit="SfDataGrid1_CurrentCellBeginEdit"
+                CurrentCellEndEdit="SfDataGrid1_CurrentCellEndEdit"
+                CurrentCellValidating="SfDataGrid1_CurrentCellValidating"
+                CurrentCellValueChanged="SfDataGrid1_CurrentCellValueChanged"
+                EditTrigger="OnTap"
+                FontFamily="Helvetica"
+                FontSize="14"
+                GridCopyOption="IncludeHeaders, CopyData,CutData,IncludeFormat"
+                GridLinesVisibility="Horizontal"
+                GridPasteOption="PasteData,IncludeHiddenColumn"
+                GridValidationMode="InEdit"
+                HeaderContextMenu="{x:Null}"
+                HeaderLinesVisibility="Horizontal"
+                ItemsSource="{Binding SpecialPrice_IEnum, Mode=TwoWay}"
+                LiveDataUpdateMode="AllowDataShaping"
+                PreviewKeyDown="SfDataGrid1_PreviewKeyDown"
+                RowHeight="30"
+                RowValidating="SfDataGrid1_RowValidating"
+                ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                ScrollViewer.VerticalScrollBarVisibility="Auto"
+                SelectionMode="Extended">
+                <syncfusion:SfDataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem
+                            x:Name="CopyRow"
+                            Click="CopyRow_Click"
+                            Header="Copy Row(s)" />
+                        <MenuItem
+                            x:Name="PasteRow"
+                            Click="PasteRow_Click"
+                            Header="Paste Row(s)" />
+                        <MenuItem
+                            x:Name="DeleteRow"
+                            Click="DeleteRow_Click"
+                            Header="Delete Row(s)" />
+                    </ContextMenu>
+                </syncfusion:SfDataGrid.ContextMenu>
+                <syncfusion:SfDataGrid.Columns>
+                    <syncfusion:GridMultiColumnDropDownList
+                        AllowAutoComplete="False"
+                        AllowEditing="True"
+                        AutoGenerateColumns="False"
+                        DisplayMember="CustomerId"
+                        HeaderText="Sales Code"
+                        HorizontalHeaderContentAlignment="Left"
+                        ItemsSource="{Binding Choosecustomer_IEnum, Mode=TwoWay}"
+                        MappingName="SalesCode"
+                        TextAlignment="Left"
+                        ValueMember="CustomerId" />
+                    <syncfusion:GridMultiColumnDropDownList
+                        AllowAutoComplete="False"
+                        AllowEditing="True"
+                        AutoGenerateColumns="False"
+                        DisplayMember="ItemNo"
+                        HeaderText="Item No"
+                        HorizontalHeaderContentAlignment="Left"
+                        ItemsSource="{Binding Itemunitsofmeasure_IEnum, Mode=TwoWay}"
+                        MappingName="ItemNo"
+                        TextAlignment="Left"
+                        ValueMember="ItemNo" />
+                    <syncfusion:GridMultiColumnDropDownList
+                        AllowAutoComplete="False"
+                        AllowEditing="True"
+                        AutoGenerateColumns="False"
+                        DisplayMember="Code"
+                        HeaderText="Unit Of Measure Code"
+                        HorizontalHeaderContentAlignment="Left"
+                        ItemsSource="{Binding UnitofMeasurecode_IEnum, Mode=TwoWay}"
+                        MappingName="UnitOfMeasureCode"
+                        TextAlignment="Left"
+                        ValueMember="Code" />
+                    <syncfusion:GridNumericColumn
+                        AllowEditing="True"
+                        HeaderText="Unit Price"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="UnitPrice"
+                        NumberDecimalDigits="5"
+                        TextAlignment="Left" />
+                    <syncfusion:GridDateTimeColumn
+                        x:Name="DateWidget1"
+                        AllowEditing="True"
+                        HeaderText="Starting Date"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="StartingDate"
+                        TextAlignment="Left" />
+                    <syncfusion:GridDateTimeColumn
+                        x:Name="DateWidget2"
+                        AllowEditing="True"
+                        HeaderText="Ending Date"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="EndingDate"
+                        TextAlignment="Left" />
+                    <syncfusion:GridTextColumn
+                        AllowEditing="True"
+                        HeaderText="Product Barcode"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="ProductBarcode"
+                        TextAlignment="Left" />
+                    <syncfusion:GridTextColumn
+                        AllowEditing="True"
+                        HeaderText="Barcode Format"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="Barcode_Format"
+                        TextAlignment="Left" />
+                    <syncfusion:GridTextColumn
+                        AllowEditing="True"
+                        HeaderText="Customer SKU"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="CustomerSKU"
+                        TextAlignment="Left" />
+                    <syncfusion:GridCheckBoxColumn
+                        AllowEditing="True"
+                        HeaderText="Hidden"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="Hidden"
+                        TextAlignment="Left" />
+                    <syncfusion:GridTextColumn
+                        AllowEditing="True"
+                        HeaderText="English Label Description"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="EnglishLabelDescription"
+                        TextAlignment="Left" />
+                    <syncfusion:GridTextColumn
+                        AllowEditing="True"
+                        HeaderText="Malay Label Description"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="MalayLabelDescription"
+                        TextAlignment="Left" />
+                    <syncfusion:GridTextColumn
+                        AllowEditing="True"
+                        HeaderText="Chinese Label Description"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="ChineseLabelDescription"
+                        TextAlignment="Left" />
+                    <syncfusion:GridTextColumn
+                        AllowEditing="True"
+                        HeaderText="Label Unit Of Measure"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="LabelUnitOfMeasure"
+                        TextAlignment="Left" />
+                    <syncfusion:GridTextColumn
+                        AllowEditing="True"
+                        HeaderText="Label Size"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="LabelSize"
+                        TextAlignment="Left" />
+                    <syncfusion:GridMultiColumnDropDownList
+                        AllowEditing="True"
+                        DisplayMember="Code"
+                        HeaderText="Currency Code"
+                        HorizontalHeaderContentAlignment="Left"
+                        ItemsSource="{Binding Currencies_IEnum, Mode=TwoWay}"
+                        MappingName="CurrencyCode"
+                        TextAlignment="Left"
+                        ValueMember="Code" />
+                    <syncfusion:GridCheckBoxColumn
+                        AllowEditing="True"
+                        HeaderText="Weight Item"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="WeightItem"
+                        TextAlignment="Left" />
+                    <syncfusion:GridCheckBoxColumn
+                        AllowEditing="True"
+                        HeaderText="Weight Scale"
+                        HorizontalHeaderContentAlignment="Left"
+                        MappingName="WeightScale"
+                        TextAlignment="Left" />
+                </syncfusion:SfDataGrid.Columns>
+            </syncfusion:SfDataGrid>
+        </Grid>
+    </Grid>
+</UserControl>
+
+
+

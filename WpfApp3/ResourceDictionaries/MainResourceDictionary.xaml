@@ -1,0 +1,53 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ViewModel="clr-namespace:WpfApp3.ViewModel">
+    <ViewModel:Customer_Main_ViewModel x:Key="Choose_Customer_ViewModel_Resource" />
+    <ViewModel:Country_ViewModel x:Key="Country_ViewModel_Resource" />
+    <ViewModel:Currencies_ViewModel x:Key="Currencies_ViewModel_Resource" />
+    <ViewModel:Customer_Branch_ViewModel x:Key="Customer_Branch_ViewModel_Resource" />
+    <ViewModel:InventoryPostingGroup_ViewModel x:Key="InventoryPostingGroup_ViewModel_Resource" />
+    <ViewModel:Item_Units_Of_Measure_ViewModel x:Key="Item_Units_Of_Measure_ViewModel_Resource" />
+    <ViewModel:Special_Discount_ViewModel x:Key="Special_Discount_ViewModel_Resource" />
+    <ViewModel:Special_Price_ViewModel x:Key="Special_Price_ViewModel_Resource" />
+    <ViewModel:Units_Of_Measure_ViewModel x:Key="Units_Of_Measure_ViewModel_Resource" />
+    <ViewModel:Product_Info_ViewModel x:Key="Product_Info_Packet_ViewModel_Resource" />
+    <ViewModel:Item_ViewModel x:Key="Item_ViewModel_Resource" />
+    <ViewModel:MainWindow_ViewModel x:Key="MainWindow_ViewModel_Resource" />
+    <ViewModel:MyOrg_Certification_ViewModel x:Key="MyOrg_Certification_ViewModel_Resource" />
+    <ViewModel:Certification_Actual_ViewModel x:Key="Certification_Actual_ViewModel_Resource" />
+    <ViewModel:Certification_Image_ViewModel x:Key="Certification_Image_ViewModel_Resource" />
+    <ViewModel:Item_Image_Actual_ViewModel x:Key="Item_Image_Actual_ViewModel_Resource" />
+    <ViewModel:Weigh_Form_ViewModel x:Key="Weigh_Form_ViewModel_Resource" />
+    <ViewModel:User_Configuration_ViewModel x:Key="User_Configuration_ViewModel_Resource" />
+    <BitmapImage x:Key="Img_Packet" UriSource="pack://application:,,,/Images/Packet.png" />
+    <BitmapImage x:Key="Img_Scale" UriSource="pack://application:,,,/Images/Scale.png" />
+    <BitmapImage x:Key="Img_Back" UriSource="pack://application:,,,/Images/Back.png" />
+    <BitmapImage x:Key="Img_Error" UriSource="pack://application:,,,/Images/Error.png" />
+    <BitmapImage x:Key="Img_Add" UriSource="pack://application:,,,/Images/Add.png" />
+    <BitmapImage x:Key="Img_GoTo" UriSource="pack://application:,,,/Images/GoTo.png" />
+    <BitmapImage x:Key="Img_Delete" UriSource="pack://application:,,,/Images/Delete.png" />
+    <BitmapImage x:Key="Img_Refresh" UriSource="pack://application:,,,/Images/Refresh.png" />
+    <BitmapImage x:Key="Img_Edit" UriSource="pack://application:,,,/Images/Edit.png" />
+    <BitmapImage x:Key="Img_View" UriSource="pack://application:,,,/Images/View.png" />
+    <BitmapImage x:Key="Img_Save" UriSource="pack://application:,,,/Images/Save.png" />
+    <BitmapImage x:Key="Img_Exit" UriSource="pack://application:,,,/Images/Exit.png" />
+    <BitmapImage x:Key="Img_ClearFilter" UriSource="pack://application:,,,/Images/ClearFilter.png" />
+    <BitmapImage x:Key="Img_Default" UriSource="pack://application:,,,/Images/Default.png" />
+    <BitmapImage x:Key="Img_CollapseAll" UriSource="pack://application:,,,/Images/CollapseAll.png" />
+    <BitmapImage x:Key="Img_ExpandAll" UriSource="pack://application:,,,/Images/ExpandAll.png" />
+    <BitmapImage x:Key="Img_File" UriSource="pack://application:,,,/Images/File.png" />
+    <BitmapImage x:Key="Img_Print" UriSource="pack://application:,,,/Images/Print.png" />
+    <BitmapImage x:Key="Img_Cancel" UriSource="pack://application:,,,/Images/Cancel.png" />
+    <BitmapImage x:Key="Img_NewDocument" UriSource="pack://application:,,,/Images/NewDocument.png" />
+    <BitmapImage x:Key="Img_List" UriSource="pack://application:,,,/Images/List.png" />
+    <BitmapImage x:Key="Img_green_tick" UriSource="pack://application:,,,/Images/green_tick.png" />
+    <BitmapImage x:Key="Img_good" UriSource="pack://application:,,,/Images/good.png" />
+    <BitmapImage x:Key="Img_barcode" UriSource="pack://application:,,,/Images/barcode.png" />
+    <BitmapImage x:Key="Img_horizontal_barcode" UriSource="pack://application:,,,/Images/horizontal_barcode.png" />
+    <BitmapImage x:Key="Img_qrcode" UriSource="pack://application:,,,/Images/qrcode.png" />
+    <BitmapImage x:Key="Img_product_image" UriSource="pack://application:,,,/Images/product_image.png" />
+    <BitmapImage x:Key="Img_NasaaCON_MyOrg" UriSource="pack://application:,,,/Images/NasaaCON_MyOrg.png" />
+    <BitmapImage x:Key="Img_Null_Image" UriSource="pack://application:,,,/Images/Null_Image.png" />
+    <BitmapImage x:Key="Img_goodicon" UriSource="pack://application:,,,/Images/good.ico" />
+</ResourceDictionary>

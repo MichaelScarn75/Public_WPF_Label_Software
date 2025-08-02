@@ -1,0 +1,190 @@
+﻿<Window
+    x:Class="WpfApp3.View.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
+    xmlns:ViewModel="clr-namespace:WpfApp3.ViewModel"
+    xmlns:Views="clr-namespace:WpfApp3.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    Title="MainWindow"
+    Width="1666"
+    Height="968"
+    syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=Windows11Dark}"
+    DataContext="{DynamicResource MainWindow_ViewModel_Resource}"
+    Icon="{StaticResource Img_goodicon}"
+    Loaded="Window_Loaded"
+    ResizeMode="CanResize"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <!--  DataContext="{DynamicResource MainWindow_ViewModel_AppResource}"  -->
+    <Grid x:Name="Main_Grid" Background="#202020">
+        <!--  Define Rows for each ComboBox & TextBox  -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="130" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="85" />
+            <RowDefinition Height="570" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  Define Columns for ComboBox, Label, and TextBox  -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel
+            Grid.Row="0"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Background="#202020">
+            <syncfusion:Ribbon SnapsToDevicePixels="True">
+                <syncfusion:Ribbon.ApplicationMenu>
+                    <syncfusion:ApplicationMenu
+                        Name="_applicationMenu"
+                        Width="38"
+                        Height="38"
+                        ApplicationButtonImage="{StaticResource Img_File}"
+                        IsPopupOpen="False">
+                        <syncfusion:ApplicationMenu.ApplicationItems>
+                            <syncfusion:RibbonButton
+                                x:Name="Ribbon_Exit"
+                                Click="Ribbon_Exit_Click"
+                                Label="Exit"
+                                SizeForm="Small"
+                                SmallIcon="{StaticResource Img_Exit}" />
+                        </syncfusion:ApplicationMenu.ApplicationItems>
+                    </syncfusion:ApplicationMenu>
+                </syncfusion:Ribbon.ApplicationMenu>
+                <syncfusion:RibbonTab
+                    x:Name="RibbonTab_Home"
+                    Caption="Home"
+                    IsEnabled="True">
+                    <syncfusion:RibbonBar x:Name="RibbonTab_Home_New" Header="New">
+                        <syncfusion:RibbonButton
+                            x:Name="RibbonTab_Home_New_New"
+                            Click="RibbonTab_Home_New_New_Click"
+                            IsEnabled="{Binding RibbonTab_Home_New_New_Enabled}"
+                            Label="New"
+                            LargeIcon="{StaticResource Img_NewDocument}"
+                            SizeForm="Large" />
+                    </syncfusion:RibbonBar>
+                    <syncfusion:RibbonBar x:Name="RibbonTab_Home_Manage" Header="Manage">
+                        <syncfusion:RibbonButton
+                            x:Name="RibbonTab_Home_Manage_Edit"
+                            Click="RibbonTab_Home_Manage_Edit_Click"
+                            IsEnabled="{Binding RibbonTab_Home_Manage_Edit_Enabled}"
+                            Label="Edit"
+                            LargeIcon="{StaticResource Img_Edit}"
+                            SizeForm="Large" />
+                        <syncfusion:RibbonButton
+                            x:Name="RibbonTab_Home_Manage_View"
+                            Click="RibbonTab_Home_Manage_View_Click"
+                            IsEnabled="{Binding RibbonTab_Home_Manage_View_Enabled}"
+                            Label="View"
+                            LargeIcon="{StaticResource Img_View}"
+                            SizeForm="Large" />
+                        <syncfusion:RibbonButton
+                            x:Name="RibbonTab_Home_Manage_Delete"
+                            Click="RibbonTab_Home_Manage_Delete_Click"
+                            IsEnabled="{Binding RibbonTab_Home_Manage_Delete_Enabled}"
+                            Label="Delete"
+                            LargeIcon="{StaticResource Img_Delete}"
+                            SizeForm="Large" />
+                    </syncfusion:RibbonBar>
+                    <syncfusion:RibbonBar x:Name="RibbonTab_Home_Page" Header="Page">
+                        <syncfusion:RibbonButton
+                            x:Name="RibbonTab_Home_Page_Refresh"
+                            Click="RibbonTab_Home_Page_Refresh_Click"
+                            IsEnabled="{Binding RibbonTab_Home_Page_Refresh_Enabled}"
+                            Label="Refresh"
+                            LargeIcon="{StaticResource Img_Refresh}"
+                            SizeForm="Large" />
+                        <syncfusion:RibbonButton
+                            x:Name="RibbonTab_Home_Page_ClearFilter"
+                            Click="RibbonTab_Home_Page_ClearFilter_Click"
+                            IsEnabled="{Binding RibbonTab_Home_Page_ClearFilter_Enabled}"
+                            Label="Clear Filter"
+                            LargeIcon="{StaticResource Img_ClearFilter}"
+                            SizeForm="Large" />
+                    </syncfusion:RibbonBar>
+                </syncfusion:RibbonTab>
+            </syncfusion:Ribbon>
+        </StackPanel>
+
+        <Grid
+            Grid.Row="1"
+            Grid.RowSpan="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="4">
+            <!--  indicator  -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--  indicator  -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                BorderBrush="CadetBlue"
+                BorderThickness="0.1">
+                <DockPanel>
+                    <Grid>
+                        <syncfusion:SfTreeView
+                            ItemTapped="SfTreeView_ItemTapped"
+                            ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                            ScrollViewer.VerticalScrollBarVisibility="Auto"
+                            SelectionBackgroundColor="#CCE6F7">
+                            <syncfusion:SfTreeView.Nodes>
+                                <Engine:TreeViewNode Content="Certificate" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Certificate Image" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Choose Customer" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Country" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Currencies" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Customer Branch" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Inventory Posting Group" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Items" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Item Image" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Item Units Of Measure" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Special Price" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Special Discount" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Units Of Measure" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Product Listing Simple View" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="MyOrg Certificate" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="User Configuration" IsExpanded="True" />
+                                <Engine:TreeViewNode Content="Print Label" IsExpanded="True" />
+                            </syncfusion:SfTreeView.Nodes>
+                        </syncfusion:SfTreeView>
+                    </Grid>
+                </DockPanel>
+            </Border>
+            <Border
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                BorderThickness="3">
+                <ContentControl x:Name="ContentControl1" />
+                <!--  Content="{Binding Views:Item_Units_Of_Measure.xaml}"  -->
+                <!--  InventoryPostingGroup  -->
+                <!--  MainWindow  -->
+                <!--  Items  -->
+                <!--  Units_Of_Measure  -->
+                <!--  Item_Units_Of_Measure  -->
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

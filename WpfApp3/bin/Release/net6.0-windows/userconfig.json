@@ -1,0 +1,11 @@
+{
+  "Com_Port_Number": 7,
+  "DataBit": 8,
+  "Parity": 0,
+  "Baudrate": 9600,
+  "StopBits": 1,
+  "BigLabelPrinter": "Microsoft Print To PDF",
+  "MediumLabelPrinter": "Microsoft Print To PDF",
+  "SmallLabelPrinter": "Microsoft Print To PDF",
+  "BaseCurrency": "MYR"
+}

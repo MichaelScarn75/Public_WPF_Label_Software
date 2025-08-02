@@ -1,0 +1,354 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UserSecretsId>"GUID HERE"</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\71397.png" />
+    <None Remove="Images\Add.png" />
+    <None Remove="Images\Arrow_Blue.png" />
+    <None Remove="Images\Arrow_Blue1.png" />
+    <None Remove="Images\Arrow_Blue2.png" />
+    <None Remove="Images\Back.png" />
+    <None Remove="Images\barcode.png" />
+    <None Remove="Images\Cancel.png" />
+    <None Remove="Images\ClearFilter.png" />
+    <None Remove="Images\CollapseAll.png" />
+    <None Remove="Images\CustomerBranch.png" />
+    <None Remove="Images\Default.png" />
+    <None Remove="Images\Delete.png" />
+    <None Remove="Images\down_arrow.png" />
+    <None Remove="Images\Edit.png" />
+    <None Remove="Images\empty_tick.png" />
+    <None Remove="Images\Error.png" />
+    <None Remove="Images\Exit.png" />
+    <None Remove="Images\ExpandAll.png" />
+    <None Remove="Images\File.png" />
+    <None Remove="Images\good %2864X64%29.ico" />
+    <None Remove="Images\good.ico" />
+    <None Remove="Images\good.png" />
+    <None Remove="Images\GoTo.png" />
+    <None Remove="Images\green_tick.png" />
+    <None Remove="Images\horizontal_barcode.png" />
+    <None Remove="Images\ifoam_logo.jpg" />
+    <None Remove="Images\ImportDatabase.png" />
+    <None Remove="Images\import_file_logo.png" />
+    <None Remove="Images\List.png" />
+    <None Remove="Images\myorganic_logo.png" />
+    <None Remove="Images\NasaaCON.png" />
+    <None Remove="Images\NasaaCON_MyOrg.png" />
+    <None Remove="Images\NasaaIC_Org.png" />
+    <None Remove="Images\NasaaOIC.png" />
+    <None Remove="Images\NewDocument.png" />
+    <None Remove="Images\Null_Cert_Image.png" />
+    <None Remove="Images\Null_Image.png" />
+    <None Remove="Images\Number1.png" />
+    <None Remove="Images\Number2.png" />
+    <None Remove="Images\OrgTHA.png" />
+    <None Remove="Images\Packet.ico" />
+    <None Remove="Images\Packet.png" />
+    <None Remove="Images\Print.png" />
+    <None Remove="Images\product-management %281%29.png" />
+    <None Remove="Images\product-management.png" />
+    <None Remove="Images\product_image.png" />
+    <None Remove="Images\qrcode.png" />
+    <None Remove="Images\Refresh.png" />
+    <None Remove="Images\Save.png" />
+    <None Remove="Images\scale.jpg" />
+    <None Remove="Images\scale.png" />
+    <None Remove="Images\search_cartoon1_512X512.png" />
+    <None Remove="Images\search_cartoon1_64X64.png" />
+    <None Remove="Images\search_cartoon2_512X512.png" />
+    <None Remove="Images\search_cartoon2_64X64.png" />
+    <None Remove="Images\search_illustration_icon_450X450.jpg" />
+    <None Remove="Images\search_illustration_icon_57X57.jpg" />
+    <None Remove="Images\search_yellow_512X512.png" />
+    <None Remove="Images\search_yellow_64X64.png" />
+    <None Remove="Images\ServiceSetup.png" />
+    <None Remove="Images\Setup.png" />
+    <None Remove="Images\SpecialDiscount.png" />
+    <None Remove="Images\SpecialPrice.png" />
+    <None Remove="Images\tick-vector-icon.jpg" />
+    <None Remove="Images\ttp-244.png" />
+    <None Remove="Images\View.png" />
+    <None Remove="userconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.15.2" />
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
+    <PackageReference Include="MySql.Data" Version="9.2.0" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="NetBarcode" Version="1.8.2" />
+    <PackageReference Include="QRCoder" Version="1.6.0" />
+    <PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="3.119.0" />
+    <PackageReference Include="SkiaSharp.Views.WPF" Version="3.116.1" />
+    <PackageReference Include="Syncfusion.Grid.WPF" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.Licensing" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.SfGrid.WPF" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.Shared.Base" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.Themes.Metro.WPF" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.Themes.Windows11Dark.WPF" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.UI.WPF.NET" Version="28.2.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.18" />
+    <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+    <PackageReference Include="ZXing.Net" Version="0.16.10" />
+    <PackageReference Include="ZXing.Net.Bindings.Windows.Compatibility" Version="0.16.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BarcodeStandard">
+      <HintPath>..\BarcodeStandard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\71397.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Add.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Arrow_Blue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Arrow_Blue1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Arrow_Blue2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Back.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\barcode.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Cancel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ClearFilter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\CollapseAll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\CustomerBranch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Default.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Delete.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\down_arrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Edit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\empty_tick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Error.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Exit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ExpandAll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\File.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\good (64X64).ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\good.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\good.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GoTo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\green_tick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\horizontal_barcode.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ifoam_logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ImportDatabase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\import_file_logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\List.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\myorganic_logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\NasaaCON.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\NasaaCON_MyOrg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\NasaaIC_Org.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\NasaaOIC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\NewDocument.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Null_Cert_Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Null_Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Number1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Number2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\OrgTHA.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Packet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Print.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\product-management (1).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\product-management.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\product_image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\qrcode.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Refresh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Save.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\scale.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\scale.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\search_cartoon1_512X512.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\search_cartoon1_64X64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\search_cartoon2_512X512.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\search_cartoon2_64X64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\search_illustration_icon_450X450.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\search_illustration_icon_57X57.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\search_yellow_512X512.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\search_yellow_64X64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ServiceSetup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Setup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\SpecialDiscount.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\SpecialPrice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\tick-vector-icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ttp-244.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\View.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <EmbeddedResource Include="userconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="View\Item_Image.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Item.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Certification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MyOrg_Certification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\User_Configuration.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Weigh_Form.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="View\Certification.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

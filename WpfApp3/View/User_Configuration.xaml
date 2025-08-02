@@ -1,0 +1,293 @@
+﻿<UserControl
+    x:Class="WpfApp3.View.User_Configuration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ViewModel="clr-namespace:WpfApp3.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp3.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    Name="User_Configuration_User_Control"
+    Width="1366"
+    Height="768"
+    syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=Windows11Dark}"
+    DataContext="{DynamicResource User_Configuration_ViewModel_Resource}"
+    Loaded="User_Configuration_User_Control_Loaded"
+    mc:Ignorable="d">
+
+    <Grid x:Name="Main_Grid">
+        <!--  Define Rows for each ComboBox & TextBox  -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  Define Columns for ComboBox, Label, and TextBox  -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="300" />
+        </Grid.ColumnDefinitions>
+        <Label
+            Grid.Row="0"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="COM Port Number: "
+            FontSize="25" />
+        <Label
+            Grid.Row="1"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Databit: "
+            FontSize="25" />
+        <Label
+            Grid.Row="2"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Parity: "
+            FontSize="25" />
+        <Label
+            Grid.Row="0"
+            Grid.RowSpan="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Baudrate: "
+            FontSize="25" />
+        <Label
+            Grid.Row="1"
+            Grid.RowSpan="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Stop Bits: "
+            FontSize="25" />
+        <Label
+            Grid.Row="3"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Big Label Printer: "
+            FontSize="25" />
+        <Label
+            Grid.Row="4"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Medium Label Printer: "
+            FontSize="25" />
+        <Label
+            Grid.Row="5"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Small Label Printer: "
+            FontSize="25" />
+        <Label
+            Grid.Row="6"
+            Grid.RowSpan="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Base Currency: "
+            FontSize="25" />
+        <syncfusion:SfTextBoxExt
+            x:Name="SfTextBoxExt1"
+            Grid.Row="0"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="25"
+            Text="{Binding User_Configuration.Com_Port_Number, Mode=TwoWay}"
+            TextAlignment="Left"
+            TextWrapping="Wrap" />
+        <syncfusion:ComboBoxAdv
+            x:Name="ComboBoxExt2"
+            Grid.Row="1"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="25"
+            IsReadOnly="True"
+            ItemsSource="{Binding DataBits_Collection}"
+            SelectedValue="{Binding User_Configuration.DataBit, Mode=TwoWay}" />
+        <syncfusion:ComboBoxAdv
+            x:Name="ComboBoxExt3"
+            Grid.Row="2"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="25"
+            IsReadOnly="True"
+            ItemsSource="{Binding Parity_Collection}"
+            SelectedValue="{Binding User_Configuration.Parity, Mode=TwoWay}" />
+        <syncfusion:ComboBoxAdv
+            x:Name="ComboBoxExt4"
+            Grid.Row="3"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="25"
+            IsReadOnly="True"
+            ItemsSource="{Binding BigLabelPrinters_Collection}"
+            SelectedValue="{Binding User_Configuration.BigLabelPrinter, Mode=TwoWay}" />
+        <syncfusion:ComboBoxAdv
+            x:Name="ComboBoxExt5"
+            Grid.Row="4"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="25"
+            IsReadOnly="True"
+            ItemsSource="{Binding MediumLabelPrinters_Collection}"
+            SelectedValue="{Binding User_Configuration.MediumLabelPrinter, Mode=TwoWay}" />
+        <syncfusion:ComboBoxAdv
+            x:Name="ComboBoxExt6"
+            Grid.Row="5"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="25"
+            IsReadOnly="True"
+            ItemsSource="{Binding SmallLabelPrinters_Collection}"
+            SelectedValue="{Binding User_Configuration.SmallLabelPrinter, Mode=TwoWay}" />
+        <syncfusion:ComboBoxAdv
+            x:Name="ComboBoxExt7"
+            Grid.Row="6"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="25"
+            IsReadOnly="True"
+            ItemsSource="{Binding BaseCurrency_Collection}"
+            SelectedValue="{Binding User_Configuration.BaseCurrency, Mode=TwoWay}" />
+        <syncfusion:ComboBoxAdv
+            x:Name="ComboBoxExt8"
+            Grid.Row="0"
+            Grid.RowSpan="1"
+            Grid.Column="3"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="25"
+            IsReadOnly="True"
+            ItemsSource="{Binding Baudrate_Collection}"
+            SelectedValue="{Binding User_Configuration.Baudrate, Mode=TwoWay}" />
+        <syncfusion:ComboBoxAdv
+            x:Name="ComboBoxExt9"
+            Grid.Row="1"
+            Grid.RowSpan="1"
+            Grid.Column="3"
+            Grid.ColumnSpan="1"
+            MinWidth="200"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            DisplayMemberPath="Key"
+            FontSize="25"
+            IsReadOnly="True"
+            ItemsSource="{Binding StopBits_Collection}"
+            SelectedValue="{Binding User_Configuration.StopBits, Mode=TwoWay}"
+            SelectedValuePath="Value" />
+
+        <syncfusion:ButtonAdv
+            x:Name="button_Save"
+            Grid.Row="11"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
+            Margin="0,0,100,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            Click="button_Save_Click"
+            CornerRadius="5"
+            FontFamily="Helvetica"
+            FontSize="25"
+            IconHeight="32"
+            IconWidth="32"
+            Label="Save  "
+            LargeIcon="{StaticResource Img_Save}"
+            SmallIcon="{StaticResource Img_Save}" />
+
+        <syncfusion:ButtonAdv
+            x:Name="button_Reload"
+            Grid.Row="11"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="0,0,50,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            Click="button_Reload_Click"
+            CornerRadius="5"
+            FontFamily="Helvetica"
+            FontSize="25"
+            IconHeight="32"
+            IconWidth="32"
+            Label="Reload  "
+            LargeIcon="{StaticResource Img_Refresh}"
+            SmallIcon="{StaticResource Img_Refresh}" />
+    </Grid>
+</UserControl>

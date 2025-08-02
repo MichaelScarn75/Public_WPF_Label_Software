@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\Certification_Image.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Customer_To_Print.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PacketOrScale.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Customer_Main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Country.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InventoryPostingGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Item_Units_Of_Measure.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\BigLabel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MediumLabel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Product_Info.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Product_Listing_Simple_View.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SmallLabel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SpecialDiscount.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Special_Price.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Units_Of_Measure.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Certification_Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Item_Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Customer_To_Print.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Certification.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PacketOrScale.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Customer_Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Country.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InventoryPostingGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResourceDictionaries\MainResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Item.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Item_Units_Of_Measure.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\BigLabel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MediumLabel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\User_Configuration.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Weigh_Form.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Product_Info.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Product_Listing_Simple_View.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SmallLabel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SpecialDiscount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Special_Price.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MyOrg_Certification.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Units_Of_Measure.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
