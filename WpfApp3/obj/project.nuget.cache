@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SdZzZE3MFzM=",
+  "dgSpecHash": "eYm8hFkjiAg=",
   "success": true,
-  "projectFilePath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+  "projectFilePath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chong\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\chong\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -186,9 +186,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "projectPath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "filePath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "libraryId": "InputSimulator",
       "targetGraphs": [
         "net6.0-windows7.0"
@@ -198,9 +198,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.Data.SqlClient 6.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "projectPath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "filePath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "libraryId": "Microsoft.Data.SqlClient",
       "targetGraphs": [
         "net6.0-windows7.0"
@@ -210,9 +210,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.Data.SqlClient.SNI 6.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "projectPath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "filePath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "libraryId": "Microsoft.Data.SqlClient.SNI",
       "targetGraphs": [
         "net6.0-windows7.0"
@@ -222,9 +222,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'OpenTK 3.3.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "projectPath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "filePath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "libraryId": "OpenTK",
       "targetGraphs": [
         "net6.0-windows7.0"
@@ -234,9 +234,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'OpenTK.GLWpfControl 3.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "projectPath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "filePath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "libraryId": "OpenTK.GLWpfControl",
       "targetGraphs": [
         "net6.0-windows7.0"
@@ -246,9 +246,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'SkiaSharp.Views.WPF 3.116.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "projectPath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+      "filePath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
       "libraryId": "SkiaSharp.Views.WPF",
       "targetGraphs": [
         "net6.0-windows7.0"

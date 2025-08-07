@@ -1,16 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Testing\\WpfApp3\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{03308F8F-A63C-41F0-9677-363BED4B6CE5}|WpfApp3\\WpfApp3.csproj|c:\\testing\\wpfapp3\\wpfapp3\\view\\biglabel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{03308F8F-A63C-41F0-9677-363BED4B6CE5}|WpfApp3\\WpfApp3.csproj|solutionrelative:wpfapp3\\view\\biglabel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03308F8F-A63C-41F0-9677-363BED4B6CE5}|WpfApp3\\WpfApp3.csproj|c:\\testing\\wpfapp3\\wpfapp3\\view\\product_info.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03308F8F-A63C-41F0-9677-363BED4B6CE5}|WpfApp3\\WpfApp3.csproj|solutionrelative:wpfapp3\\view\\product_info.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Testing\\Public_WPF_Label_Software\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 410,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,31 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BigLabel.xaml",
-              "DocumentMoniker": "C:\\Testing\\WpfApp3\\WpfApp3\\View\\BigLabel.xaml",
-              "RelativeDocumentMoniker": "WpfApp3\\View\\BigLabel.xaml",
-              "ToolTip": "C:\\Testing\\WpfApp3\\WpfApp3\\View\\BigLabel.xaml",
-              "RelativeToolTip": "WpfApp3\\View\\BigLabel.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-02T18:47:20.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Product_Info.xaml.cs",
-              "DocumentMoniker": "C:\\Testing\\WpfApp3\\WpfApp3\\View\\Product_Info.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp3\\View\\Product_Info.xaml.cs",
-              "ToolTip": "C:\\Testing\\WpfApp3\\WpfApp3\\View\\Product_Info.xaml.cs",
-              "RelativeToolTip": "WpfApp3\\View\\Product_Info.xaml.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAcwK4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T18:41:20.746Z",
-              "EditorCaption": ""
             }
           ]
         }

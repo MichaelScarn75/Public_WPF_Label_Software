@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Testing\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\
+C:\Testing\Public_WPF_Label_Software\WpfApp3\obj\Debug\net6.0-windows\
 WpfApp3
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Testing\WpfApp3\WpfApp3\App.xaml
+C:\Testing\Public_WPF_Label_Software\WpfApp3\App.xaml
 25-1580922033
 
 104-25245385
-405-2080584531
+4058526898
 ResourceDictionaries\MainResourceDictionary.xaml;View\BigLabel.xaml;View\Certification.xaml;View\Certification_Image.xaml;View\Country.xaml;View\Currencies.xaml;View\Customer_Branch.xaml;View\Customer_Main.xaml;View\Customer_To_Print.xaml;View\InventoryPostingGroup.xaml;View\Item.xaml;View\Item_Image.xaml;View\Item_Units_Of_Measure.xaml;View\MainWindow.xaml;View\MediumLabel.xaml;View\MyOrg_Certification.xaml;View\PacketOrScale.xaml;View\Product_Info.xaml;View\Product_Listing_Simple_View.xaml;View\SmallLabel.xaml;View\SpecialDiscount.xaml;View\Special_Price.xaml;View\Units_Of_Measure.xaml;View\User_Configuration.xaml;View\Weigh_Form.xaml;
 
 False

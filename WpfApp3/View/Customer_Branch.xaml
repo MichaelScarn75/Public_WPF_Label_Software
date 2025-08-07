@@ -84,6 +84,7 @@
                         Grid.Row="0"
                         Grid.Column="1"
                         Background="LightGoldenrodYellow"
+                        Foreground="Black"
                         BorderThickness="0"
                         FontSize="13"
                         Text="{Binding ErrorTextBox1_Text}"

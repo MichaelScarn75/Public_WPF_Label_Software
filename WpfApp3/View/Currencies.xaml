@@ -86,6 +86,7 @@
                         Background="LightGoldenrodYellow"
                         BorderThickness="0"
                         FontSize="13"
+                        Foreground="Black"
                         Text="{Binding ErrorTextBox1_Text}"
                         Watermark="Enter a Value" />
                 </Grid>

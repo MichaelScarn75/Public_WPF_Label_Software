@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj": {}
+    "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj": {}
   },
   "projects": {
-    "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj": {
+    "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+        "projectUniqueName": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
         "projectName": "WpfApp3",
-        "projectPath": "C:\\Testing\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
+        "projectPath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\WpfApp3.csproj",
         "packagesPath": "C:\\Users\\chong\\.nuget\\packages\\",
-        "outputPath": "C:\\Testing\\WpfApp3\\WpfApp3\\obj\\",
+        "outputPath": "C:\\Testing\\Public_WPF_Label_Software\\WpfApp3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

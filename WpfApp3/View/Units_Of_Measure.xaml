@@ -83,6 +83,7 @@
                         x:Name="ErrorTextBox1"
                         Grid.Row="0"
                         Grid.Column="1"
+                        Foreground="Black"
                         Background="LightGoldenrodYellow"
                         BorderThickness="0"
                         FontSize="13"
